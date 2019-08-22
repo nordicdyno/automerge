@@ -3,6 +3,7 @@ on: [pull_request]
 jobs:
   merge:
     name: Merge
+    runs-on: ubuntu-latest
     steps:
       - name: "Auto merge code passed all checks"
         uses: "pascalgn/automerge-action@v0.2.4"
